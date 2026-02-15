@@ -1,0 +1,21 @@
+{% load static %} {% block callbuttn %}
+
+<!DOCTYPE html>
+<head>
+  <script
+    src="{% static 'https://kit.fontawesome.com/a84070dc31.js' %}"
+    crossorigin="anonymous"
+  ></script>
+
+  <link rel="stylesheet" href="{% static 'css/call.css' %}" />
+</head>
+<div dir="rtl">
+  <div id="call">
+    <div class="call-buton">
+      <a class="cc-calto-action-ripple" href="tel:+01114025352"
+        ><i class="fa fa-phone"></i><span class="num"></span>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock callbuttn %}
